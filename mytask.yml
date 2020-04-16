@@ -1,0 +1,11 @@
+---
+- hosts: webserver
+  become: yes
+  vars: 
+    myvariables: [user1, user2, user3]
+  tasks:
+  - name: display myvariables
+    debug:
+       message: "{{ item }}"
+    with_items:
+      - "{{ myvariables }}"   
