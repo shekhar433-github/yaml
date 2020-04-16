@@ -6,6 +6,6 @@
   tasks:
   - name: display myvariables
     debug:
-       message: "{{ item }}"
+       msg: "{{ item }}"
     with_items:
       - "{{ myvariables }}"   
