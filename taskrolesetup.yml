@@ -1,9 +1,8 @@
 ---
 - hosts: dbserver
   become: yes
-- import_playbook: 
-     - main1.yml
-     - main2.yml
-     - main3.yml
-  roles:  
+- tasks:
+  - include_tasks: [main1.yml, main2.yml, main3.yml]
+  - name: i want to 
+    roles:  
     - {role: taskrole, when: ansible_os_family =="RedHat"}
