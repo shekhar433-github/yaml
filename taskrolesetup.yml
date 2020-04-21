@@ -1,7 +1,7 @@
 ---
 - hosts: dbserver
   become: yes
-- include: 
+- import_playbook: 
      - main1.yml
      - main2.yml
      - main3.yml
