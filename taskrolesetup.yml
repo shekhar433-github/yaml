@@ -3,4 +3,3 @@
   become: yes
   roles:  
    - {role: taskrole, when: ansible_os_family =="RedHat"}
-   - include_tasks: [main1.yml, main2.yml, main3.yml]
