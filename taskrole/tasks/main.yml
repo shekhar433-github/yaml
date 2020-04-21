@@ -1,2 +1,6 @@
 ---
 # tasks file for taskrole
+- name: install tomcat
+  yum:
+   name: tomcat
+   state: present
