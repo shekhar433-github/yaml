@@ -1,12 +1,5 @@
 ---
 - hosts: dbserver
   become: yes
-- name: install tomcat
-  yum:
-  - include: 
-    - main.yml
-    - main1.yml
-    - main2.yml
-    - main3.yml
   role:  
     - {role: taskrole, when: ansible_os_family =="RedHat"}
