@@ -1,8 +1,7 @@
 ---
 - hosts: dbserver
   become: yes
-  tasks:
-  - include: 
+- include-tasks: 
      - main1.yml
      - main2.yml
      - main3.yml
