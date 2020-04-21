@@ -1,6 +1,6 @@
 ---
 - name:  copy tom config file into dbserver
   template:
-    src:  /home/e1/yaml/mytomrole/templates/taskroleconfig.j2
+    src:  /home/e1/yaml/taskrole/templates/taskroleconfig.j2
     dest: /usr/share/tomcat/conf/tomcat.conf
   notify: starttomcat
