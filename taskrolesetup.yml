@@ -1,5 +1,5 @@
 ---
 - hosts: dbserver
   become: yes
-  role:  
+  roles:  
     - {role: taskrole, when: ansible_os_family =="RedHat"}
