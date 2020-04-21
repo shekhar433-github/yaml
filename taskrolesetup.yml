@@ -1,5 +1,10 @@
 ---
 - hosts: dbserver
   become: yes
+  tasks:
+  - include_tasks: 
+     - main1.yml
+     - main2.yml
+     - main3.yml
   roles:  
     - {role: taskrole, when: ansible_os_family =="RedHat"}
